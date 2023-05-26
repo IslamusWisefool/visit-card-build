@@ -1,0 +1,36 @@
+.section-cards {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  aspect-ratio: 3/4;
+  position: relative;
+  max-width: 250px;
+  background: url(../img/statue.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding-top: 11em;
+  border-radius: 0.6em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-size 600ms ease-in-out;
+  margin-bottom: 2rem;
+}
+.card-text {
+  position: absolute;
+  width: 100%;
+  min-height: 30%;
+  bottom: 0;
+  padding: 3rem;
+  color: white;
+  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.755) 80%);
+  border-radius: inherit;
+  z-index: 10;
+}
+.card-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}

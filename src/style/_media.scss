@@ -1,0 +1,108 @@
+@media (width < 1005px) {
+  .cloud {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+  }
+  .section-cards {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+  }
+  .card {
+    max-width: none;
+    aspect-ratio: 16 / 9;
+  }
+  .section-about-me {
+    flex-direction: column;
+  }
+  .about-me-picture {
+    aspect-ratio: 16/9;
+    margin: 0 1.5rem;
+    background-position: 50% 30%;
+  }
+  .about-me-text {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .about-me-tech {
+    display: none;
+  }
+  .why-cards {
+    flex-direction: column;
+  }
+  .why-card {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 80vw;
+  }
+  .why-card .social {
+    width: 25vw;
+    height: 25vw;
+  }
+  .blog-cards {
+    flex-direction: column;
+  }
+  .blog-card {
+    margin: 0 auto;
+    max-width: 80vw;
+    margin-bottom: 4rem;
+  }
+  .blog-card-pic {
+    width: auto;
+  }
+}
+@media (width > 1005px) {
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .card-text {
+    --padding-card-text: 1rem;
+    --transition-delay: 300ms;
+    position: relative;
+    color: white;
+    padding: var(--padding-card-text);
+    padding-top: none;
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.755) 80%);
+    border-radius: inherit;
+    transform: translateY(63%);
+    transition: transform 600ms ease-in-out;
+    transition-delay: var(--transition-delay);
+    z-index: 10;
+  }
+  .card:hover .card-text {
+    transform: translateY(0);
+  }
+  .card-title {
+    position: relative;
+    width: max-content;
+    margin-bottom: 0.5em;
+  }
+  .card-title::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--padding-card-text) * -1);
+    bottom: -5px;
+    width: calc(100% + var(--padding-card-text));
+    height: 3px;
+    background-color: #004cff;
+    transform: translateX(calc(-1 * (100% + var(--padding-card-text))));
+    transition: transform var(--transition-delay) linear;
+  }
+  .card:hover .card-title::after {
+    transform: translateX(0);
+  }
+  .card:hover::after {
+    backdrop-filter: blur(3px);
+  }
+  .card:hover {
+    background-size: 110%;
+  }
+}

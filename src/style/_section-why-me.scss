@@ -1,0 +1,32 @@
+.section-why h2 {
+  text-align: center;
+}
+.why-cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.why-card {
+  max-width: 35ch;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.why-card .social {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.laptop {
+  background-image: url("../img/laptop.svg");
+}
+.watch {
+  background-image: url("../img/watch.svg");
+}
+.coin {
+  background-image: url("../img/coin.svg");
+}

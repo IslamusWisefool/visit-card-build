@@ -1,0 +1,44 @@
+.section-about-me {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+}
+.about-me-picture {
+  aspect-ratio: 3 / 4;
+  min-width: 350px;
+  background-image: url("../img/avatar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.about-me-text {
+  max-width: 75ch;
+  padding: 0 2em;
+}
+.about-me-text p,
+.about-me-text h2 {
+  margin: 1rem;
+}
+.about-me-tech {
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.reactjs {
+  background-image: url("../img/reactjsinc.svg");
+}
+.javascript {
+  background-image: url("../img/javascriptinc.svg");
+}
+.html {
+  background-image: url("../img/htmlinc.svg");
+}
+.css {
+  background-image: url("../img/cssinc.svg");
+}

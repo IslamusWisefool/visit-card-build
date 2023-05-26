@@ -1,0 +1,37 @@
+.section-blog h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.blog-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-top: 1rem;
+}
+.blog-card {
+  max-width: 30ch;
+  cursor: pointer;
+}
+.blog-card h3 {
+  margin: 1rem 0;
+}
+.blog-card-pic {
+  aspect-ratio: 16 /9;
+  width: 30ch;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 6px 1px rgba(163, 142, 255, 0.611);
+}
+.roses {
+  background-image: url("../img/roses-blog.jpg");
+}
+.flowers {
+  background-image: url("../img/flowers-blog.jpg");
+}
+.leaf {
+  background-image: url("../img/leaf-blog.jpg");
+}

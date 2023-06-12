@@ -56,6 +56,45 @@
     width: auto;
   }
 }
+@media (width < 621px) {
+  .section-top {
+    justify-content: space-evenly;
+    aspect-ratio: auto;
+  }
+  .navbar {
+    max-height: fit-content;
+    flex-direction: column;
+  }
+  .btn::after,
+  .btn::before {
+    content: none;
+  }
+  .header {
+    padding: 0;
+    padding: 2rem 0;
+    overflow: visible;
+    &-pic {
+      background-size: auto;
+    }
+    &-title {
+      display: none;
+    }
+  }
+  .box {
+    display: none;
+  }
+  .card {
+    aspect-ratio: 3/4;
+    &-text {
+      padding: 1rem;
+    }
+  }
+  .about-me-picture {
+    aspect-ratio: 3/4;
+    min-width: auto;
+    margin: 0;
+  }
+}
 @media (width > 1005px) {
   .card::after {
     content: "";
